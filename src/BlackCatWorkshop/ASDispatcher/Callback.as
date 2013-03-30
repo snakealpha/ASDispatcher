@@ -15,6 +15,8 @@ package BlackCatWorkshop.ASDispatcher
 		{
 			_key = key;
 			_callback =callback; 
+			_isPriorityBlock = isPriorityBlock;
+			_isCallBlock = isCallBlock;
 		}
 		
 		public function get key():String

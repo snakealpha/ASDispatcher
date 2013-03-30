@@ -43,6 +43,11 @@ package BlackCatWorkshop.ASDispatcher
 												   functionBody:Function, 
 												   channel:String = "default"):void
 		{
+			if(!instance.channels.hasOwnProperty(channel))
+			{
+				return;
+			}
+			
 			var channelInstance:Channel = Channel(instance.channels[channel]);
 			channelInstance.deleteCallback(eventName, functionBody);
 		}
@@ -51,6 +56,11 @@ package BlackCatWorkshop.ASDispatcher
 												functionBody:Function, 
 												channel:String = "default"):Boolean
 		{
+			if(!instance.channels.hasOwnProperty(channel))
+			{
+				return false;
+			}
+			
 			var channelInstance:Channel = Channel(instance.channels[channel]);
 			return channelInstance.hasCallback(eventName, functionBody);
 		}

@@ -30,6 +30,7 @@ package BlackCatWorkshop.ASDispatcher
 					if(callback.key == eventName && callback.callback == functionBody)
 					{
 						coPriorityCallbacks.splice(i, 1);
+						i--;
 					}
 				}
 			}
