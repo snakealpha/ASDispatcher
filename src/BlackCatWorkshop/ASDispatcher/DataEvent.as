@@ -13,6 +13,9 @@ package BlackCatWorkshop.ASDispatcher
 			_data = data;
 		}
 		
+		/**
+		 * Data object that has been passed as the data argument while constructing.
+		 */
 		public function get data():Object
 		{
 			return _data;

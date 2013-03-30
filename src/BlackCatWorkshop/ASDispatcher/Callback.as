@@ -1,6 +1,6 @@
 package BlackCatWorkshop.ASDispatcher
 {
-	public class Callback
+	internal class Callback
 	{
 		private var _key:String;
 		private var _callback:Function;
