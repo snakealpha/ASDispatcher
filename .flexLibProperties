@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <flexLibProperties includeAllClasses="true" useMultiPlatformConfig="false" version="3">
-  <includeClasses>
-    <classEntry path="BlackCatWorkshop.ASDispatcher.Dispatcher"/>
-    <classEntry path="BlackCatWorkshop.ASDispatcher.Channel"/>
-    <classEntry path="BlackCatWorkshop.ASDispatcher.Callback"/>
-    <classEntry path="BlackCatWorkshop.ASDispatcher.DataEvent"/>
-  </includeClasses>
+  <includeClasses/>
   <includeResources/>
   <namespaceManifests/>
 </flexLibProperties>
