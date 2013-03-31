@@ -123,7 +123,9 @@ package BlackCatWorkshop.ASDispatcher
 		 * 								Callbacks added with a different channel will not receive events dispatched with a specific channel, even if they share a same eventName.
 		 * 								With putting events into different channels, dispatcher will run a little faster. 
 		 */
-		public static function dispatchEvent(event:String, data:Object, channel:String = "default"):void
+		public static function dispatchEvent(event:String, 
+											 data:Object = null, 
+											 channel:String = "default"):void
 		{
 			dispatchEventObject(new DataEvent(event, data), channel);
 		}

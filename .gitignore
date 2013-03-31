@@ -140,7 +140,7 @@ dist
 build
 eggs
 parts
-bin
+#bin
 var
 sdist
 develop-eggs
@@ -163,4 +163,4 @@ pip-log.txt
 .DS_Store
 
 #ActionScript 3 Project with FlashBuilder
-bin
+#bin
