@@ -142,6 +142,10 @@ package BlackCatWorkshop.ASDispatcher
 		 */
 		public static function dispatchEventObject(eventObject:DataEvent, channel:String = "default"):void
 		{
+			if(!instance.channels.hasOwnProperty(channel))
+			{
+				instance.channels[channel] = new Channel();
+			}
 			var channelInstance:Channel = Channel(instance.channels[channel]);
 			channelInstance.callCallback(eventObject);
 		}
